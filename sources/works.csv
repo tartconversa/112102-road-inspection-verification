@@ -1,0 +1,4 @@
+job,segment,defect,day,state
+W1,D6,F3,11,repaired
+W2,D21,F10,11,repaired
+W3,D11,F5,12,closed

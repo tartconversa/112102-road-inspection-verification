@@ -1,0 +1,4 @@
+event,draw,from_crew,to_segment,day,decision
+H1,V6,T2,D6,11,confirmed
+H2,V11,T1,D16,12,substitution
+H3,V16,T2,D16,12,confirmed
