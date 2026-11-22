@@ -25,3 +25,17 @@ dispatch_updates 的 substitution 只说明现场安排改变，抽样组未给�
 ```sh
 python -m unittest discover -s tests -v
 ```
+
+## 分析应用
+
+可复跑的比较与值班应用位于 `app/`（仅标准库），支持：随机窗口内的漏检 HT 加权估计、
+描述性误报窗口、相邻缺陷组合并、拆分世系、紧急派工/改派/关闭重派、含未报缺陷预留名额的
+下一轮计划、只追加事件日志、不可变报告快照与差异、线索去向追踪。
+
+```sh
+python3 -I app/run_tests.py           # 全部测试（隔离模式）
+python3 -I app/demo.py                # 端到端可复跑演示
+```
+
+详见 `app/README.md`。运行期产物写入 `runtime/`（事件日志与报告快照），
+可重放场景在 `scenarios/round2.json`；`sources/` 台账在任何流程中都不被修改。

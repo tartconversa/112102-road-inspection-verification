@@ -1,0 +1,534 @@
+{
+  "backlog": null,
+  "capacity_audit": [
+    {
+      "crew": "T1",
+      "day": 12,
+      "over_by": 4,
+      "places": 8,
+      "planned_draws": [
+        "V1",
+        "V3",
+        "V9",
+        "V11",
+        "V15",
+        "V21",
+        "V27",
+        "V31",
+        "V33",
+        "V39",
+        "V41",
+        "V45"
+      ],
+      "urgent_reserved": 3
+    },
+    {
+      "crew": "T2",
+      "day": 12,
+      "over_by": 5,
+      "places": 6,
+      "planned_draws": [
+        "V6",
+        "V12",
+        "V16",
+        "V18",
+        "V24",
+        "V26",
+        "V30",
+        "V36",
+        "V42",
+        "V46",
+        "V48"
+      ],
+      "urgent_reserved": 2
+    }
+  ],
+  "cohort": {
+    "excluded": [
+      {
+        "reason": "由 D6 拆分出的 v2 新单位，本轮未分配巡查方式，无观察；自其启用轮起独立计入",
+        "segment": "D6-A"
+      },
+      {
+        "reason": "由 D6 拆分出的 v2 新单位，本轮未分配巡查方式，无观察；自其启用轮起独立计入",
+        "segment": "D6-B"
+      }
+    ],
+    "included_segments": [
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D15",
+      "D16",
+      "D17",
+      "D18",
+      "D19",
+      "D20",
+      "D21",
+      "D22",
+      "D23",
+      "D24",
+      "D25",
+      "D26",
+      "D27",
+      "D28",
+      "D29",
+      "D30",
+      "D31",
+      "D32",
+      "D33",
+      "D34",
+      "D35",
+      "D36",
+      "D37",
+      "D38",
+      "D39",
+      "D40",
+      "D41",
+      "D42",
+      "D43",
+      "D44",
+      "D45",
+      "D46",
+      "D47",
+      "D48"
+    ],
+    "name": "第1轮试点（v1 路段）",
+    "period": "纳入日 1–7；巡查/抽查观察日 8–12；拆分新段自 day 13 起另算下一轮；退役父段 D6 的历史观察不回填到拆分新段",
+    "unit": "segment_version（路段×版本）；D6 v1 与 D6-A/D6-B v2 是不同观察单位，跨版本比较须沿 prior_segment 世系对齐，不能直接拼接"
+  },
+  "comparison": {
+    "cohort_summary": {
+      "excluded": [
+        [
+          "D6-A",
+          "由 D6 拆分出的 v2 新单位，本轮未分配巡查方式，无观察；自其启用轮起独立计入"
+        ],
+        [
+          "D6-B",
+          "由 D6 拆分出的 v2 新单位，本轮未分配巡查方式，无观察；自其启用轮起独立计入"
+        ]
+      ],
+      "included_segments": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10",
+        "D11",
+        "D12",
+        "D13",
+        "D14",
+        "D15",
+        "D16",
+        "D17",
+        "D18",
+        "D19",
+        "D20",
+        "D21",
+        "D22",
+        "D23",
+        "D24",
+        "D25",
+        "D26",
+        "D27",
+        "D28",
+        "D29",
+        "D30",
+        "D31",
+        "D32",
+        "D33",
+        "D34",
+        "D35",
+        "D36",
+        "D37",
+        "D38",
+        "D39",
+        "D40",
+        "D41",
+        "D42",
+        "D43",
+        "D44",
+        "D45",
+        "D46",
+        "D47",
+        "D48"
+      ],
+      "name": "第1轮试点（v1 路段）",
+      "period": "纳入日 1–7；巡查/抽查观察日 8–12；拆分新段自 day 13 起另算下一轮；退役父段 D6 的历史观察不回填到拆分新段",
+      "unit": "segment_version（路段×版本）；D6 v1 与 D6-A/D6-B v2 是不同观察单位，跨版本比较须沿 prior_segment 世系对齐，不能直接拼接"
+    },
+    "descriptive": {
+      "aerial": {
+        "confirmed": 0,
+        "draws": [
+          "P3",
+          "P6",
+          "P15",
+          "P18",
+          "P27",
+          "P30",
+          "P39",
+          "P42"
+        ],
+        "inconclusive": 0,
+        "label": "影像辅助 aerial 线索",
+        "n": 8,
+        "not_found": 7,
+        "not_found_ci95": [
+          0.6456611570247934,
+          1.0
+        ],
+        "not_found_rate": 1.0,
+        "pending": 0,
+        "repaired_before": 1
+      },
+      "all": {
+        "confirmed": 5,
+        "draws": [
+          "P3",
+          "P4",
+          "P6",
+          "P12",
+          "P15",
+          "P16",
+          "P18",
+          "P24",
+          "P27",
+          "P28",
+          "P30",
+          "P36",
+          "P39",
+          "P40",
+          "P42",
+          "P48"
+        ],
+        "inconclusive": 0,
+        "label": "全部已上报线索（描述性，仅限被复核子集）",
+        "n": 16,
+        "not_found": 7,
+        "not_found_ci95": [
+          0.3195073356553728,
+          0.8067425380947535
+        ],
+        "not_found_rate": 0.5833333333333334,
+        "pending": 3,
+        "repaired_before": 1
+      },
+      "ground": {
+        "confirmed": 5,
+        "draws": [
+          "P4",
+          "P12",
+          "P16",
+          "P24",
+          "P28",
+          "P36",
+          "P40",
+          "P48"
+        ],
+        "inconclusive": 0,
+        "label": "常规 ground 线索",
+        "n": 8,
+        "not_found": 0,
+        "not_found_ci95": [
+          0.0,
+          0.43449149475208104
+        ],
+        "not_found_rate": 0.0,
+        "pending": 3,
+        "repaired_before": 0
+      },
+      "routine": {
+        "confirmed": 0,
+        "draws": [
+          "P3",
+          "P15",
+          "P27",
+          "P39"
+        ],
+        "inconclusive": 0,
+        "label": "常规 routine 线索",
+        "n": 4,
+        "not_found": 4,
+        "not_found_ci95": [
+          0.5100999795960008,
+          1.0
+        ],
+        "not_found_rate": 1.0,
+        "pending": 0,
+        "repaired_before": 0
+      },
+      "urgent": {
+        "confirmed": 5,
+        "draws": [
+          "P4",
+          "P6",
+          "P12",
+          "P16",
+          "P18",
+          "P24",
+          "P28",
+          "P30",
+          "P36",
+          "P40",
+          "P42",
+          "P48"
+        ],
+        "inconclusive": 0,
+        "label": "紧急 urgent 线索",
+        "n": 12,
+        "not_found": 3,
+        "not_found_ci95": [
+          0.13684175946152105,
+          0.6942621454161981
+        ],
+        "not_found_rate": 0.375,
+        "pending": 3,
+        "repaired_before": 1
+      }
+    },
+    "estimability_notes": [
+      "漏检只能在随机抽查窗口内估计：未报缺陷且被 random 抽中、并有 open 观察的路段。",
+      "repaired 观察是修后路面，配合已完工资料只登记为事前缺陷，不计入 open 阴性/阳性窗口。",
+      "directed 派工与 substituted 替代抽查没有设计纳入概率，其误报/确认率只能描述被复核子集。",
+      "改派后的替代抽查不继承原抽样概率；主动加查不得在事后当作随机发现。",
+      "拆分新段（D6-A/D6-B）是新观察单位，第1轮结论不覆盖，纳入下一轮计划。",
+      "未抽中的未报缺陷路段缺陷状态未知，区间不覆盖这部分不确定性，只能通过下一轮预留名额收窄。"
+    ],
+    "method_comparison": {
+      "aerial_leads": {
+        "confirmed_open": 0,
+        "inconclusive": 0,
+        "not_found_open": 7,
+        "pending": 0,
+        "repaired_before_verification": 1,
+        "reported": 8
+      },
+      "ground_leads": {
+        "confirmed_open": 5,
+        "inconclusive": 0,
+        "not_found_open": 0,
+        "pending": 3,
+        "repaired_before_verification": 0,
+        "reported": 8
+      },
+      "scope": "仅在同时具备检查机会与证据的路段内比较；无抽查覆盖的路段不进入结论"
+    },
+    "observed_miss_outcomes": [
+      {
+        "day": 12,
+        "defect": "F0",
+        "deviation": false,
+        "draw": "V1",
+        "draw_type": "random",
+        "method": "aerial",
+        "result": "O1",
+        "segment": "D1"
+      },
+      {
+        "day": 12,
+        "defect": "F16",
+        "deviation": false,
+        "draw": "V33",
+        "draw_type": "directed",
+        "method": "ground",
+        "result": "O33",
+        "segment": "D33"
+      },
+      {
+        "day": 12,
+        "defect": "F20",
+        "deviation": false,
+        "draw": "V41",
+        "draw_type": "random",
+        "method": "aerial",
+        "result": "O41",
+        "segment": "D41"
+      },
+      {
+        "day": 12,
+        "defect": "F22",
+        "deviation": false,
+        "draw": "V45",
+        "draw_type": "directed",
+        "method": "ground",
+        "result": "O45",
+        "segment": "D45"
+      },
+      {
+        "day": 12,
+        "defect": "F4",
+        "deviation": false,
+        "draw": "V9",
+        "draw_type": "directed",
+        "method": "ground",
+        "result": "O9",
+        "segment": "D9"
+      }
+    ],
+    "windows": [
+      {
+        "covered_segments": 6,
+        "draw_ids": [
+          "V1",
+          "V11",
+          "V26",
+          "V31",
+          "V41",
+          "V46"
+        ],
+        "estimated_rate": 0.3125,
+        "ht_se": 6.324555320336758,
+        "ht_total_misses": 10.0,
+        "ht_variance": 39.99999999999999,
+        "include_deviated": true,
+        "label": "随机窗口（含协议偏差路段）",
+        "method_breakdown": {
+          "aerial": {
+            "clear_population": 16,
+            "observed_misses": 2,
+            "sampled": 3,
+            "weighted_total_misses": 10.0,
+            "wilson_observed_rate": [
+              0.2076549551264879,
+              0.9385096847238394
+            ]
+          },
+          "ground": {
+            "clear_population": 16,
+            "observed_misses": 0,
+            "sampled": 3,
+            "weighted_total_misses": 0.0,
+            "wilson_observed_rate": [
+              0.0,
+              0.5615060804490177
+            ]
+          }
+        },
+        "n_sampled": 6,
+        "observed_misses": 2,
+        "population_size": 32,
+        "prior_evidence_misses": 1,
+        "rate_ci95": [
+          0.0,
+          0.6998790133706264
+        ],
+        "unknown_segments": 26
+      },
+      {
+        "covered_segments": 5,
+        "draw_ids": [
+          "V1",
+          "V26",
+          "V31",
+          "V41",
+          "V46"
+        ],
+        "estimated_rate": 0.3125,
+        "ht_se": 6.324555320336758,
+        "ht_total_misses": 10.0,
+        "ht_variance": 39.99999999999999,
+        "include_deviated": false,
+        "label": "随机窗口（剔除改派/关闭等偏差路段，敏感性口径）",
+        "method_breakdown": {
+          "aerial": {
+            "clear_population": 16,
+            "observed_misses": 2,
+            "sampled": 3,
+            "weighted_total_misses": 10.0,
+            "wilson_observed_rate": [
+              0.2076549551264879,
+              0.9385096847238394
+            ]
+          },
+          "ground": {
+            "clear_population": 16,
+            "observed_misses": 0,
+            "sampled": 2,
+            "weighted_total_misses": 0.0,
+            "wilson_observed_rate": [
+              0.0,
+              0.6576280471103807
+            ]
+          }
+        },
+        "n_sampled": 5,
+        "observed_misses": 2,
+        "population_size": 32,
+        "prior_evidence_misses": 1,
+        "rate_ci95": [
+          0.0,
+          0.6998790133706264
+        ],
+        "unknown_segments": 27
+      }
+    ]
+  },
+  "created_after_event_seq": 0,
+  "estimability_notes": [
+    "漏检只能在随机抽查窗口内估计：未报缺陷且被 random 抽中、并有 open 观察的路段。",
+    "repaired 观察是修后路面，配合已完工资料只登记为事前缺陷，不计入 open 阴性/阳性窗口。",
+    "directed 派工与 substituted 替代抽查没有设计纳入概率，其误报/确认率只能描述被复核子集。",
+    "改派后的替代抽查不继承原抽样概率；主动加查不得在事后当作随机发现。",
+    "拆分新段（D6-A/D6-B）是新观察单位，第1轮结论不覆盖，纳入下一轮计划。",
+    "未抽中的未报缺陷路段缺陷状态未知，区间不覆盖这部分不确定性，只能通过下一轮预留名额收窄。"
+  ],
+  "event_log_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "pending_urgent_leads": [
+    {
+      "candidate": "F2",
+      "caveat": "",
+      "reason": "pending",
+      "report": "P4",
+      "segment": "D4",
+      "severity": "urgent",
+      "status": "pending_verification"
+    },
+    {
+      "candidate": "F14",
+      "caveat": "",
+      "reason": "pending",
+      "report": "P28",
+      "segment": "D28",
+      "severity": "urgent",
+      "status": "pending_verification"
+    },
+    {
+      "candidate": "F20",
+      "caveat": "本路段本体未到场；已并入缺陷组 F20@D40+D41 的相邻段证据，本路面是否同样存在缺陷仍保留不确定性",
+      "reason": "merged",
+      "report": "P40",
+      "segment": "D40",
+      "severity": "urgent",
+      "status": "pending_verification"
+    }
+  ],
+  "report_id": "R1-baseline",
+  "source_hashes": {
+    "crew_capacity": "ea797fa1a6ef98f2acaed548be2d9dca071f4eaa8ac25ea3a3c0bad6edb10693",
+    "dispatch_updates": "89a2f69db2096b0ae944d1df6746ef7f1fff871ddc88dcea02e059ebf1981802",
+    "field_outcomes": "7db2bedbc0267c251c7a55f7e13b702c95f36cbd53da368b43b11d9b3018da79",
+    "survey_reports": "3f4115fbce1c962d39f4bf6fd66629644254d52a535b59004a3c64dd1c21f738",
+    "trial_assignment": "49dc5cb1fe601c19f660975e19f642d5be2956ee56ab363a1c70971e8113216b",
+    "verification_draws": "199a3ae30cdc314a418e09889d37a18fc98ab9cfcdff0a67558798320ac2957b",
+    "works": "e50074f2c314ef168060356ab776bd70054b21512aa18b8d0d49823e272cbe05"
+  },
+  "title": "第1轮巡查方式比较报告"
+}

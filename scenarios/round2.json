@@ -1,0 +1,237 @@
+{
+  "scenario": "round2-operational-replay",
+  "description": "第2轮值班与抽查的可重放事件序列。所有编号显式给出，重放结果确定；原 sources/ 试点名单不被修改。",
+  "events": [
+    {
+      "id": "E01",
+      "command": "start_round",
+      "args": {
+        "day": 13,
+        "note": "第2轮：D6 拆分新段启用，D6 v1 退役",
+        "round": 2
+      }
+    },
+    {
+      "id": "E02",
+      "command": "set_capacity",
+      "args": {
+        "crew": "T1",
+        "day": 13,
+        "places": 8,
+        "urgent_reserved": 3
+      }
+    },
+    {
+      "id": "E03",
+      "command": "set_capacity",
+      "args": {
+        "crew": "T2",
+        "day": 13,
+        "places": 6,
+        "urgent_reserved": 2
+      }
+    },
+    {
+      "id": "E04",
+      "command": "set_capacity",
+      "args": {
+        "crew": "T1",
+        "day": 14,
+        "places": 6,
+        "urgent_reserved": 3
+      }
+    },
+    {
+      "id": "E05",
+      "command": "set_capacity",
+      "args": {
+        "crew": "T2",
+        "day": 14,
+        "places": 6,
+        "urgent_reserved": 2
+      }
+    },
+    {
+      "id": "E06",
+      "command": "set_capacity",
+      "args": {
+        "crew": "T1",
+        "day": 15,
+        "places": 7,
+        "urgent_reserved": 2
+      }
+    },
+    {
+      "id": "E07",
+      "command": "set_capacity",
+      "args": {
+        "crew": "T2",
+        "day": 15,
+        "places": 7,
+        "urgent_reserved": 2
+      }
+    },
+    {
+      "id": "E10",
+      "command": "close_segment",
+      "args": {
+        "segment": "D11",
+        "day": 13,
+        "reason": "临时施工封闭，V11 与 W3 同时受影响"
+      }
+    },
+    {
+      "id": "E11",
+      "command": "substitute",
+      "args": {
+        "draw": "V11",
+        "day": 13,
+        "reroute_closed": true
+      }
+    },
+    {
+      "id": "E12",
+      "command": "dispatch",
+      "args": {
+        "report": "P4",
+        "crew": "T1",
+        "day": 13
+      }
+    },
+    {
+      "id": "E13",
+      "command": "dispatch",
+      "args": {
+        "report": "P28",
+        "crew": "T2",
+        "day": 13
+      }
+    },
+    {
+      "id": "E14",
+      "command": "repair",
+      "args": {
+        "job": "W4",
+        "segment": "D4",
+        "defect": "F2",
+        "day": 13
+      }
+    },
+    {
+      "id": "E20",
+      "command": "arrival",
+      "args": {
+        "draw": "R2-U-P4",
+        "day": 14,
+        "defect": "",
+        "physical_state": "repaired",
+        "note": "到场确认 W4 已修复 F2，repaired 不作修复前阴性"
+      }
+    },
+    {
+      "id": "E21",
+      "command": "arrival",
+      "args": {
+        "draw": "R2-U-P28",
+        "day": 14,
+        "defect": "F14",
+        "physical_state": "open",
+        "note": "确认 F14 仍在"
+      }
+    },
+    {
+      "id": "E22",
+      "command": "merge",
+      "args": {
+        "group_label": "F20@D40+D41",
+        "merged_reports": [
+          "P40"
+        ],
+        "kept_report": "O41",
+        "day": 14
+      }
+    },
+    {
+      "id": "E23",
+      "command": "dispatch",
+      "args": {
+        "report": "P18",
+        "crew": "T2",
+        "day": 14
+      }
+    },
+    {
+      "id": "E24",
+      "command": "arrival",
+      "args": {
+        "draw": "R2-U-P18",
+        "day": 14,
+        "defect": "F9",
+        "physical_state": "open",
+        "note": "复核确认 F9"
+      }
+    },
+    {
+      "id": "E25",
+      "command": "correct",
+      "args": {
+        "report": "P18",
+        "new_status": "confirmed_open",
+        "day": 14,
+        "note": "E24 现场确认，证据由待核实更正为 confirmed_open"
+      }
+    },
+    {
+      "id": "E29",
+      "command": "close_segment",
+      "args": {
+        "segment": "D8",
+        "day": 14,
+        "reason": "临时封闭，D8 在第2轮计划生成前已关闭；计划生成后再演示关闭命中的改派见 E40"
+      }
+    },
+    {
+      "id": "E30",
+      "command": "plan",
+      "args": {
+        "round": 2,
+        "day": 15,
+        "crews": [
+          "T1",
+          "T2"
+        ],
+        "negative_fraction": 0.5,
+        "event_id": "E30"
+      }
+    },
+    {
+      "id": "E40",
+      "command": "close_segment",
+      "args": {
+        "segment": "D1",
+        "day": 15,
+        "reason": "临时封闭恰好落在第2轮随机计划（R2-R-01-D1）内，原名单不改，执行改派"
+      }
+    },
+    {
+      "id": "E41",
+      "command": "substitute",
+      "args": {
+        "draw": "R2-R-01-D1",
+        "day": 15,
+        "reroute_closed": true
+      }
+    },
+    {
+      "id": "E42",
+      "command": "arrival",
+      "args": {
+        "draw": "R2-R-01-D1-SUB",
+        "day": 16,
+        "defect": "",
+        "physical_state": "open",
+        "note": "替代抽查无抽样概率，只登记为主动加查证据，不能事后当作随机发现"
+      }
+    }
+  ]
+}
